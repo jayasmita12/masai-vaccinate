@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h3>unique id:<span id="uniqueid"></span></h3>
+
+        </div>
+        <div>
+          Name:<input type="text" value="" id="name" placeholder="Enter name">
+        </div>
+        <div>
+            Age: <input type="Number" id="age" placeholder="Enter age">
+        </div>
+        <div >
+            <input type="radio" name="designation" value="employe" id="employee">
+            <label for="">Employee</label>
+            <input type="radio" name="designation" value="student" id="student">
+            <label for="">Student</label>
+        </div>
+        <div>
+            <select name="" id="priority" onchange="changepriority()">
+                <option value="">select...</option>
+                <option value="p0">P0</option>
+                <option value="p1">P1</option>
+                <option value="p2">P2</option>
+                <option value="p3">P3</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="vaccine" onchange="changevaccine()">
+                <option value="">select...</option>
+                <option value="Covidshield">Covidshield</option>
+                <option value="Covaccine">Covaxin</option>
+                <option value="Sputnik">Sputnik</option>   
+            </select>
+        </div>
+        <div>
+            <button id="registerBtn" onclick="register()">Register</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./register.js"></script>
